@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  var coords=[[102.144024,3.042791],
+                    [102.545336,2.822987],
+                    [102.778352,2.616115],
+                    [102.925091,2.382804],
+                    [106.829606,-5.93061],
+                    [106.827492,-6.172472]];
+  var geoCoords={};
+  for(var i=0;i< coords.length;i++){
+     var key="point"+(260+i);
+     geoCoords[key]=coords[i];
+  }
+  var array=[];
+  for(var i=0;i<coords.length;i++){
+      array.push([{name:"point"+(260+i)},{name:"point"+(260+i+1)}]);
+  }
+  document.write(JSON.stringify(geoCoords));
+</script>
+
+</body>
+</html>

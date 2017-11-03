@@ -1,0 +1,25 @@
+{
+  "name": "mapofdevelopment",
+  "version": "1.0.0",
+  "description": "地图视角看前进中的中国",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -a localhost -p 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NavinfoWeb/MapOfDevelopment.git"
+  },
+  "keywords": [
+    "echarts"
+  ],
+  "author": "wangtun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NavinfoWeb/MapOfDevelopment/issues"
+  },
+  "homepage": "https://github.com/NavinfoWeb/MapOfDevelopment#readme",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}

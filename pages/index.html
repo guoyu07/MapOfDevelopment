@@ -59,6 +59,7 @@
 			left:0;
 			top:0;
 			z-index: 5;
+			overflow: hidden;
 			font-family: PingFangSC-Regular;
 			font-size: 36px;
 			letter-spacing: 1.5px;
@@ -83,6 +84,7 @@
 		}
 		
 		#pinButton{
+			display: none;
 			width: 50px;
             height: 50px;
             position: absolute;
@@ -135,6 +137,11 @@
 				},
 				afterLoad: function(anchorLink, index){
 					var loadedSection = $(this);
+					if(index == 1){
+						$("#pinButton").hide();
+					} else{
+						$("#pinButton").show();
+					}
 				}
 			});
 			initRoadChart();
